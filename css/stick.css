@@ -1,0 +1,23 @@
+	/* 右下角置顶按钮 */
+	
+	.stick{
+		position: fixed;
+		width: 40px;
+		height: 40px;
+		right: 10%;
+		bottom: 50px;
+		text-align: center;
+		border-radius: 10px;
+		z-index: 999;
+		cursor: pointer;
+		background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+		box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+					7px 7px 20px 0px rgba(0,0,0,.1),
+					4px 4px 5px 0px rgba(0,0,0,.1);
+	}
+	.stick img{
+		display:inline;
+		width: 30px;
+		height: 30px;
+		margin-top: 5px;
+	}

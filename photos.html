@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>光影 | 摄影专区</title>
+		
+		<script src="js/Jquery.js"></script>
+		<!-- Logo -->
+		<link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+		<!-- 摄影专区css -->
+		<link rel="stylesheet" href="css/photos.css" />
+		<!-- 右下角置顶按钮css -->
+		<link rel="stylesheet" href="./css/stick.css" type="text/css" />
+		<!-- 小鱼缸 -->
+		<link rel="stylesheet" type="text/css" href="css/fishtank.css"/>
+		<!-- 导航栏面向对象渲染js -->
+		<script src="js/navigation.js"></script>
+		<!-- Ajax请求js -->
+		<script src="js/ajax.js"></script>
+	</head>
+	<body>
+		<!-- 导航条 -->
+		<div id="navigation">
+			<div id="logo"><img src="images/GYING.png" /></div>
+			<div class="nav">
+				<ul id="navlist">
+					<a href="index.html"></a>
+				</ul>
+			</div>
+			<div class="search">
+				<input id="search_shu" placeholder="推荐搜索: 自然风光">
+				<li class="search_an"><img src="images/xj.png" /><a>搜索</a></li>
+				<ul class="search_headline ou">
+					<p>热门搜索:</p>
+					<li>优美壁纸</li>
+					<li>自然风光</li>
+					<li>人生百态</li>
+					<li>建筑空间</li>
+				</ul>
+			</div>
+			<div class="deng"><li><a href="Register.html">登录</a></li></div>
+			<!-- <div class="head"><img src="images/tx_1.jpg" /></div> -->
+		</div>
+		<!-- 右下角置顶按钮 -->
+		<div class="stick"><img src="images/stick.png" /></div>
+		<!-- 小鱼缸 -->
+				<div class="container">
+					<div class="bowl"></div>
+					<img class="sc ou" src="images/sc.png" />
+					<div class="water">
+						<div class="body">
+							<div class="eye"></div>
+							<div class="fin-center"></div>
+							<div class="fin top"></div>
+							<div class="fin bottom"></div>
+							<div class="tail"></div>
+						</div>
+					</div>
+				</div>
+		<script>
+			new Airplane({
+				add: 1,
+				index_url: window.location.search,
+			})
+		</script>
+		<!-- 导航条结束 -->
+		
+		<div id="photos">
+			<div id="frame">
+				<div id="label">
+					<li class="label_pn">分类：</li>
+					<ul>
+						<li>全部</li>
+						<li>优美壁纸</li>
+						<li>自然风光</li>
+						<li>人生百态</li>
+						<li>建筑空间</li>
+						<li>植物摄影</li>
+						<li>动物摄影</li>
+						<li>其他</li>
+					</ul>
+				</div>
+				
+				<div id="atlas">
+					<div id="atlas_1" class="k"></div>
+					<div id="atlas_2" class="k"></div>
+					<div id="atlas_3" class="k"></div>
+					<div id="atlas_4" class="k"></div>
+				</div>
+				
+				<div class="tpdibu ou">
+					<li>图片已经全部加载</li>
+				</div>
+				
+			</div>
+		</div>
+		<script type="text/javascript" src="js/photos.js"></script>
+	</body>
+</html>

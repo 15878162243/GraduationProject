@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>第六期预科班</title>
+  <style>
+    *{margin:0;padding:0;}
+    
+  </style>
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <script>
+
+    $.ajax({
+      url: 'http://localhost:3000/test',
+      data: {
+        username: 'yufeng',
+        password: 123456
+      },
+      type: 'post',
+      success (msg) {
+        console.log(msg)
+      }
+    })
+
+
+  </script>
+</body>
+</html>

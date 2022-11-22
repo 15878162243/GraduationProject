@@ -1,0 +1,82 @@
+			#wrap{
+				position: relative;
+				width: 1250px;
+				height: 450px;
+				margin:90px auto 0;
+				overflow: hidden;
+			}
+			#wrap img{
+				width: 1250px;
+				height: 450px;
+				vertical-align: top;
+			}
+			#wrap .pic{
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 1000%;
+			}
+			.pic li{
+				float: left;
+			}
+			
+			.tab{
+				position: absolute;
+				bottom: 10px;
+				left: 52%;
+				margin-left: -100px;
+				width: 160px;
+				height: 30px;
+				padding-left:10px;
+				background: rgba(0,0,0,.2);
+				border-radius: 15px;
+				transition: .5s;
+				transform: scale(.8);
+			}
+			.tab:hover{
+				background: rgba(0,0,0,.5);
+				transform: scale(1.1);
+			}
+			.tab li{
+				width: 20px;
+				height: 20px;
+				float: left;
+				background: #fff;
+				border-radius: 50%;
+				margin: 5px 10px 0 0;
+				opacity: .35;
+				cursor: pointer;
+			}
+			.tab li.on{
+				position: absolute;
+				top: 0px;
+				background: #6139ca;
+				opacity: 1;
+				z-index: 99;
+			}
+			#wrap>div{
+				position: absolute;
+				top: 50%;
+				margin-top: -30px;
+				width: 60px;
+				height: 60px;
+				background: rgba(0,0,0,.2);
+				text-align: center;
+				font-size: 18px;
+				line-height: 60px;
+				color: #fff;
+				cursor: pointer;
+				border-radius: 50%;
+				transition: 0.5s;
+			}
+			#wrap>div:hover{
+				color: #6139ca;
+				background: rgba(0,0,0,.5);
+			}
+			.prev{
+				left: -60px;
+			}
+			.next{
+				right: -60px;
+			}

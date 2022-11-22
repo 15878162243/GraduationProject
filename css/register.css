@@ -1,0 +1,380 @@
+	
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		/*固定背景代码*/
+		background-image: url(../images/dlbj.jpg);
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+	#index{
+		position: fixed;
+		width: 850px;
+		height: 450px;
+		margin: auto auto;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		border-radius: 10px;
+		background: linear-gradient(45deg,#5720e4,#875fed);
+	}
+
+	#index_right{
+		float: right;
+		width: 300px;
+		height: 400px;
+		margin-top: 25px;
+		margin-right: 25px;
+		border-radius: 10px;
+		background-color: #fff;
+	}
+	.index_right_1{
+		width: 100%;
+		height: 50px;
+		margin-top: 20px;
+		text-align: center;
+		line-height: 50px;
+		list-style: none;
+		font-size: 20px;
+		font-weight: 700;
+		color: #5720e4;
+	}
+	
+	.index_right_2{
+		width: 90%;
+		height: 250px;
+		margin: 0 auto;
+	}
+	.register{
+		width: 100%;
+	}
+	
+	.cuo{
+		width: 250px;
+		height: 40px;
+		font-size: 15px;
+		line-height: 40px;
+		padding-left: 20px;
+		border-radius: 10px;
+		background-color: #ffdbdb;
+		border: 1px solid #ff5454;
+	}
+	
+	#neu{
+		border: 0px;
+		width: 250px;
+		height: 40px;
+		margin: 10px auto;
+		border-radius: 10px;
+		padding-left: 20px;
+		outline:none;
+		cursor: pointer;
+		background-color:#e1e1e1;
+		position: relative;
+	}
+	
+	#shu{
+		border: 0px;
+		width: 220px;
+		height: 40px;
+		background-color:#e1e1e1;
+		border-radius: 10px;
+		outline:none;
+		cursor: pointer;
+		position: absolute;
+	}
+	#tu{
+		position: absolute;
+		right: 10px;
+		top: 0;
+		bottom: 0;
+	}
+	#tu img{
+		width: 20px;
+	}
+	
+	.register li{
+		float: right;
+		height: 40px;
+		margin: 10px 0 0 10px;
+		list-style: none;
+	}
+	#yzm{
+		width: 90px;
+		height: 40px;
+		border-radius: 10px;
+		cursor: pointer;
+	}
+	
+	
+	.custom-btn{
+		width: 270px;
+		height: 40px;
+		color: #fff;
+		border-radius: 10px;
+		line-height: 40px;
+		font-family: 'Lato', sans-serif;
+		font-size: 17px;
+		font-weight: 500;
+		margin: 10px auto;
+		background: transparent;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		position: relative;
+		display: inline-block;
+		box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+					7px 7px 20px 0px rgba(0,0,0,.1),
+					4px 4px 5px 0px rgba(0,0,0,.1);
+	}
+	.custom-btn a{
+		text-decoration: none;
+		color: #fff;
+	}
+	.btn-2{
+		background: rgb(96,9,240);
+		background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+		border: none;
+	}
+	.btn-2:before{
+		height: 0%;
+		width: 2px;
+	}
+	.btn-2:hover{
+		box-shadow: inset -4px -4px 6px 0 rgba(255,255,255,.2),
+					inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+	}
+	
+	
+	.index_right_3{
+		width: 90%;
+		height: 30px;
+		margin: 0 auto;
+		list-style: none;
+		cursor: pointer;
+	}
+	.index_right_3 li{
+		font-weight: 700;
+		font-size: 15px;
+		color: #8b8b8b;
+	}
+	.index_right_3 li:hover{
+		color: #000000;
+	}
+	
+	#index_left{
+		position: relative;
+		float: left;
+		width: 500px;
+		height: 400px;
+		margin-top: 25px;
+		margin-left: 25px;
+		border-radius: 10px;
+		color: #FFFFFF;
+	}
+	#index_left li{
+		font-size: 17px;
+		list-style: none;
+		margin-top: 20px;
+	}
+	.logo{
+		position: absolute;
+		bottom: 40px;	
+	}
+	
+	
+	/* 小鱼缸 */
+	.container{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		transform: scale(0.7);
+	}
+
+	.bowl{
+	  height: 200px;
+	  width: 200px;
+	  border-radius: 50%;
+	  border: 2px solid #bdbdbd;
+	  position: relative;
+	  animation: move 8s infinite;
+	}
+
+	@keyframes move{
+		0% {
+			transform: rotate(0);
+		}
+		33% {
+			transform: rotate(-20deg);
+		}
+		67% {
+			transform: rotate(20deg);
+		}
+		100% {
+			transform: rotate(0);
+		}
+	}
+
+	.bowl:after{
+		content: "";
+		position: absolute;
+		width: 100px;
+		height: 26px;
+		border-radius: 50%;
+		background:rgba(99, 9, 255, 1.0);
+		border: 2px solid #bdbdbd ;
+		left: 50%;
+		top: -4px;
+		transform: translatex(-50%);
+		z-index: 100;
+	}
+
+	.water{
+		height: 190px;
+		width: 190px;
+		background: linear-gradient(to bottom, rgba(96,9,240,0) 0% 50%, #2389da 50% 100%);
+		border-radius: 50%;
+		position: absolute;
+		top: 7px;
+		left: 7px;
+		animation: move1 8s infinite;
+		z-index: -100;
+	}
+
+	@keyframes move1{
+		0% {
+			transform: rotate(0);
+		}
+		33% {
+			transform: rotate(20deg);
+		}
+		67% {
+			transform: rotate(-20deg);
+		}
+		100% {
+			transform: rotate(0);
+		}
+	}
+
+	.water:after{
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 30px;
+		background: #0f5e9c;
+		border-radius: 50%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.body{
+		width: 70px;
+		height: 36px;
+		background: orange;
+		border-radius: 40% 50% 50% 40%;
+		bottom: 30px;
+		right: 60px;
+		position: absolute;
+	}
+
+	.fin{
+		width: 40px;
+		height: 24px;
+		position: absolute;
+		background: #EF8A1F;
+		border-radius: 50%;
+	}
+
+	.fin.top{
+		z-index: -100;
+		transform: rotate(-20deg);
+		left: 14px;
+		bottom: 24px;
+		border-radius: 50% 50% 0% 0%;
+	}
+
+	.fin.bottom{
+		z-index: -100;
+		transform: rotate(20deg);
+		left: 14px;
+		bottom: -12px;
+		border-radius: 50% 0% 50% 50%;
+	}
+
+	.fin-center{
+		height: 10px;
+		width: 12px;
+		background: #EF8A1F;
+		border-radius: 50% 0 0 50%;
+		position: absolute;
+		left: 30px;
+		top: 12px;
+	}
+
+	.eye{
+		height: 16px;
+		width: 16px;
+		background: white;
+		border-radius: 50%;
+		position: absolute;
+		left: 2px;
+		top: 10px;
+	}
+
+	.eye:before{
+		content: "";
+		background: black;
+		height: 8px;
+		width: 8px;
+		border-radius: 50%;
+		position: absolute;
+		left: 2px;
+		top: 4px;
+	}
+
+	.eye:after{
+		content: "";
+		background: white;
+		height: 4px;
+		width: 4px;
+		border-radius: 50%;
+		position: absolute;
+		left: 4px;
+		top: 5px;
+	}
+
+	.tail{
+		width: 32px;
+		height: 72px;
+		position: absolute;
+		right: -20px;
+		bottom: -42px;
+		z-index: -200;
+	}
+
+	.tail::before{
+		content: '';
+		position: absolute;
+		width: 32px;
+		height: 20px;
+		border-radius: 50%;
+		background: #EF8A1F;
+		transform: rotate(-30deg);
+		top: -10px;
+	}
+
+	.tail::after{
+		content: '';
+		position: absolute;
+		width: 32px;
+		height: 20px;
+		border-radius: 50%;
+		background: #EF8A1F;
+		transform: rotate(30deg);
+		top: 10px;
+	}

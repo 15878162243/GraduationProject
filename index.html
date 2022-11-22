@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>光影 | 首页</title>
+		
+		<script src="js/Jquery.js"></script>
+		<!-- Logo -->
+		<link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+		<!-- 主页css -->
+		<link rel="stylesheet" href="css/index.css" />
+		<!-- 轮播图css -->
+		<link rel="stylesheet" href="./css/lbt.css" type="text/css" />
+		<!-- 右下角置顶按钮css -->
+		<link rel="stylesheet" href="./css/stick.css" type="text/css" />
+		<!-- 小鱼缸 -->
+		<link rel="stylesheet" type="text/css" href="css/fishtank.css"/>
+		<!-- 导航栏面向对象渲染和置顶按钮js -->
+		<script src="js/navigation.js"></script>
+		<!-- 轮播图移动效果js -->
+		<script src="./js/FyAnimate.js"></script>
+		<!-- Ajax请求js -->
+		<script src="js/ajax.js"></script>
+		<!-- 登录界面的js -->
+		<script src="js/register.js"></script>
+	</head>
+	<body>
+		<!-- 导航条 -->
+		<div id="navigation">
+			<div id="logo"><img src="images/GYING.png" /></div>
+			
+			<div class="nav">
+				<ul id="navlist"></ul>
+			</div>
+			
+			<div class="search">
+				<input id="search_shu" placeholder="推荐搜索: 自然风光">
+				<li class="search_an"><img src="images/xj.png" /><a>搜索</a></li>
+				<ul class="search_headline ou">
+					<p>热门搜索:</p>
+					<li>优美壁纸</li>
+					<li>自然风光</li>
+					<li>人生百态</li>
+					<li>建筑空间</li>
+				</ul>
+			</div>
+			
+			<div class="deng"><li><a href="Register.html">登录</a></li></div>
+			<!-- <div class="head"><img src="images/tx_1.jpg" /></div> -->
+		</div>
+		<!-- 右下角置顶按钮 -->
+		<div class="stick"><img src="images/stick.png" /></div>
+		<!-- 小鱼缸 -->
+		<div class="container">
+			<div class="bowl"></div>
+			<img class="sc ou" src="images/sc.png" />
+			<div class="water">
+				<div class="body">
+					<div class="eye"></div>
+					<div class="fin-center"></div>
+					<div class="fin top"></div>
+					<div class="fin bottom"></div>
+					<div class="tail"></div>
+				</div>
+			</div>
+		</div>
+		
+		<script>
+			new Airplane({
+				add: 0,
+				index_url: window.location.search,
+			})
+		</script>
+		<!-- 导航条结束 -->
+		
+		<!-- 轮播图 -->
+		<div id="lbt">
+			<div id="wrap">
+				<ul class="pic">
+					<li><img src="images/lbt_1.jpg"></li>
+					<li><img src="images/lbt_2.jpg"></li>
+					<li><img src="images/lbt_3.jpg"></li>
+					<li><img src="images/lbt_4.jpg"></li>
+					<li><img src="images/lbt_5.jpg"></li>
+					<li><img src="images/lbt_1.jpg"></li>
+				</ul>
+				<ul class="tab">
+					<li class="on"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<div class="prev"> &lt </div>
+				<div class="next"> &gt </div>
+			</div>
+		</div>
+		<!-- 轮播图js -->
+		<script type="text/javascript" src="js/carousel.js"></script>
+		<!-- 轮播图结束 -->
+
+		<!-- 中部模块内容 -->
+		<div class="index">
+
+			<!-- 摄影博文块区域 -->
+			<div style="margin-top: 40px;height: 100px;">
+				<li style="color:rgb(204,204,204); text-align: center; font-size:20px;"><b>摄影博文</b></li>
+				<li style="color:rgba(255,255,255,0.4); text-align: center; font-size:15px;"><b>———— Photography blog ————</b></li>
+			</div>
+
+			<div id="article">
+				<div>
+					<li>贾斯汀·库兰对她年轻女孩逃亡照片的反思</li>
+					<img src="images/gs_1.jpg" />
+					<li>在1997到2002年间，这位摄影师把十几岁的女孩描绘成想象中的叛逆者，为社区和女权主义提供了一个激进的...</li>
+				</div>
+
+				<div>
+					<li>在流行文化与宣传中，冷战时代的交替历史</li>
+					<img src="images/gs_2.jpg" />
+					<li>艾卡特里尼·盖吉辛(Aikaterini Gegisian)的新艺术家书--由适当的图像制作--将身体愉悦作为反抗资本主义的一种</li>
+				</div>
+
+				<div>
+					<li>在伦敦，一场展览引发了关于男子气概的问题</li>
+					<img src="images/gs_3.jpg" />
+					<li>对一些男人来说，阳刚之气是一种习惯或一种上瘾--一种权力的承诺。但是在我的时代，通过摄影可以找到“解放”吗？ </li>
+				</div>
+
+				<div>
+					<li>拉丁美洲的黑暗和抒情景象</li>
+					<img src="images/gs_4.jpg" />
+					<li>圣地亚哥·埃斯科瓦尔-贾拉米略的照片反映了哥伦比亚、古巴和委内瑞拉政治暴力的模糊性。</li>
+				</div>
+			</div>
+
+			<!-- 摄影博文块区域结束 -->
+			
+			<!-- 摄影图集 -->
+			<div style="margin-top: 40px;height: 100px;">
+				<li style="color:rgb(204,204,204); text-align: center; font-size:20px;"><b>摄影图集</b></li>
+				<li style="color:rgba(255,255,255,0.4); text-align: center; font-size:15px;"><b>———— Photographic atlas ————</b></li>
+			</div>
+
+			<div id="atlas">
+				<div id="atlas_1" class="k"></div>
+				<div id="atlas_2" class="k"></div>
+				<div id="atlas_3" class="k"></div>
+				<div id="atlas_4" class="k"></div>
+				<div class="ying"></div>
+			</div>
+			
+			<!-- 摄影图集的js -->
+			<script type="text/javascript" src="js/tj.js"></script>
+			
+			<div style="margin-top: 20px;height: 100px;width:100%;position: relative;">
+				<button class="custom-btn btn-2"><a href="photos.html">查看更多</a></button>
+			</div>
+				
+		</div>
+		
+		<div class="hot">
+
+			<div class="hot_1">
+				<div class="hot_1_ying">
+					
+					<div style="margin-top: 40px;height: 100px;">
+						<li style="color:rgb(255, 255, 255); text-align: center; font-size:20px;"><b>热作推荐</b></li>
+						<li style="color:rgba(255,255,255,0.8); text-align: center; font-size:15px;"><b>———— Photography blog ————</b></li>
+					</div>
+					
+					<div class="hot_1_loc">
+						<div class="loc_yd loc_left"><</div>
+						<div class="loc_yd loc_right">></div>
+						<div class="loc1">
+							<!-- <div class="loc">
+								<div class="loc_k1"><img src="images/tx_1.jpg" class="loc_tx" /></div>
+								<div class="loc_k2">
+									<div class="loc_k2_1">
+										<li class="loc_k2_cu1">7788052</li>
+										<li class="loc_k2_cu2">人气</li>
+									</div>
+									<div  class="loc_k2_1">
+										<li class="loc_k2_cu1">6433</li>
+										<li class="loc_k2_cu2">作品</li>
+									</div>
+								</div>
+								<div class="loc_k3">颜毒</div>
+								<div class="loc_k4">帅哥 | 摄影师</div>
+								<div class="loc_k5">让你遇见全世界的作品</div>
+								<div class="loc_k6">
+									<li class="loc_k6_1">
+										<b class="loc_k6_11">关注</b>
+									</li>
+								</div>
+								<div class="loc_k7">
+									<img src="images/zhe_1_1.jpg" />
+									<img src="images/zhe_1_2.jpg" />
+									<img src="images/zhe_1_3.jpg" />
+								</div>
+							</div>-->
+						</div>
+					</div>
+					
+					<div style="margin-top: 40px;margin-left: 40px;height: 100px;width:100%;position: relative;">
+						<button class="custom-btn btn-2"><span>查看更多</span></button>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="hot_2">	
+				<video src="images/bjsp.mp4" muted="muted" autoplay="autoplay" loop="loop"> </video> 
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="js/hot.js"></script>
+		
+		<div class="dibu">
+			<div class="dibu_cop">
+				<div class="dibu_cop_1">
+					<ul>
+						<li>加入我们</li>
+						<div></div>
+						<li>联系我们</li>
+						<div></div>
+						<li>光影介绍</li>
+						<div></div>
+						<li>意见反馈</li>
+						<div></div>
+						<li>帮助中心</li>
+					</ul>
+				</div>
+				<div class="dibu_cop_2">&copy; 2020 - 2050 GYING 版权所有 广西光影有限公司</div>
+				<div class="dibu_cop_2">GYING是个集中各个作者优秀作品的社区，摄影爱好者可以积极投稿分享噢！让你看到全世界的样子！</div>
+			</div>
+		</div>
+
+	</body>
+</html>

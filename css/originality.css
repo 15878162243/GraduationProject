@@ -1,0 +1,385 @@
+
+	li {
+		list-style: none;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	/*背景*/
+	body {
+		/* background: url(images/cool.png); */
+		background-color: #353535;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		user-select: none;
+	}
+	
+	/* 导航栏 */
+	#navigation {
+		position: fixed;
+		width: 100%;
+		height: 70px;
+		margin-top: -100px;
+		background: #232323;
+		z-index: 9999;
+	}
+	#logo {
+		width: 150px;
+		height: 70px;
+		float: left;
+	}
+	
+	#logo img {
+		margin: 20px 0 0 20px;
+	}
+	
+	.nav {
+		width: 500px;
+		height: 70px;
+		margin: 0 auto;
+	}
+	
+	.nav ul li {
+		width: 100px;
+		height: 70px;
+		text-align: center;
+		line-height: 70px;
+		font-size: 18px;
+		font-weight: bold;
+		float: left;
+	}
+	/* .nav ul li:hover {
+		border-bottom: 2px solid #6139ca;
+	} */
+	.nav ul li a{
+		color: darkgray;
+		text-decoration: none
+	}
+	
+	.nav ul li a:hover {
+		color: #6139ca;
+		text-decoration: none;
+	}
+	
+	/* 搜索区块 */
+	.search{
+		position: absolute;	
+		right: 7%;
+		top: 25%;
+	}
+	.search input{
+		float: left;
+		border: 0px;
+		outline:none;
+		cursor: pointer;
+		background-color:#fff;
+		width: 200px;
+		height: 35px;
+		text-align: center;
+		padding-left: .7rem;
+		border-radius: .3rem 0 0 .3rem;
+	}
+	.search_an{
+		float: right;
+		width: 80px;
+		height: 35px;
+		line-height: 35px;
+		color: #fff;
+		font-size: 15px;
+		border-radius: 0 .3rem .3rem 0;
+		text-align: center;
+		cursor: pointer;
+		background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+		box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+					7px 7px 20px 0px rgba(0,0,0,.1),
+					4px 4px 5px 0px rgba(0,0,0,.1);
+	}
+	.search_an:hover{
+		opacity: 0.7;
+	}
+	
+	.search_an img{
+		width: 20px;
+		height: 20px;
+		margin: 7.5px 0 0 10px;
+		float: left;
+	}
+	.search_an img:hover{
+		
+	}
+	
+	.search_headline{
+		width: 270px;
+		height: 200px;
+		margin-top: 40px;
+		border-radius: 10px;
+		background-color: #282828;
+	}
+	.search_headline p{
+		width: 270px;
+		height: 30px;
+		line-height: 30px;
+		font-size: 13px;
+		padding-left: 20px;
+		color: rgb(173, 173, 173);
+		
+	}
+	.search_headline li{
+		width: 245px;
+		height: 40px;
+		color: rgb(204,204,204);
+		padding-left: 25px;
+		line-height: 40px;
+		font-size: 15px;
+		cursor: pointer;
+		
+	}
+	.search_headline li:hover{
+		background-color: #8c8c8c;
+	}
+	
+	/* 登录按钮 */
+	.deng{
+		position: absolute;
+		right: 2%;
+		top: 25%;
+	}
+	.deng li{
+		width: 60px;
+		height: 35px;
+		line-height: 35px;
+		font-size: 15px;
+		border-radius:.3rem;
+		text-align: center;
+		cursor: pointer;
+		background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+		box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+					7px 7px 20px 0px rgba(0,0,0,.1),
+					4px 4px 5px 0px rgba(0,0,0,.1);
+	}
+	.deng li:hover{
+		opacity: 0.7;
+	}
+	.deng li a{
+		color: #fff;
+		text-decoration: none;
+	}
+	
+	/* 头像 */
+	.head{
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		right: 2%;
+		top: 20%;
+	}
+	.head img{
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		cursor: pointer;
+	}
+	
+	
+	/* 导航栏结束 */
+	
+	
+	
+	#photos{
+		width: 100%;
+		height: 100%;
+		margin-top: 100px;
+	}
+	
+	/* 标签 */
+	#frame{
+		
+		width: 1250px;
+		height: 100%;
+		margin: 0 auto;
+	}
+	#label{
+		position: relative;
+		width: 1250px;
+		height: 60px;
+		border-radius: 10px;
+		background-color: #FFFFFF;
+	}
+	#label ul{
+		position: absolute;
+		width: 1250px;
+		height: 40px;
+		left: 80px;
+		margin-top: 10px;
+	}
+	.label_pn{
+		margin-top: 10px;
+		float: left;
+		width: 100px;
+		height: 40px;
+		text-align: center;
+		line-height: 40px;
+		color: #838383;
+		font-size: 18px;
+		font-weight: bold;
+	}
+	#label ul li{
+		float: left;
+		width: 100px;
+		height: 40px;
+		text-align: center;
+		line-height: 40px;
+		color: #4d4d4d;
+		font-size: 18px;
+		font-weight: bold;
+		border-radius: 10px;
+		margin-left: 5px;
+	}
+	#label ul li:hover{
+		
+		color: #FFFFFF;
+		background: linear-gradient(45deg,#5720e4,#875fed);
+	}
+	
+	/* 标签结束 */	
+	
+	
+	
+	/* 整个页面的“查看更多”按钮 */
+	.custom-btn {
+		width: 130px;
+		height: 40px;
+		color: #fff;
+		border-radius: 5px;
+		padding: 10px 25px;
+		font-family: 'Lato', sans-serif;
+		font-weight: 500;
+		background: transparent;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		position: relative;
+		display: inline-block;
+		margin: 0 45%;
+		box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+					7px 7px 20px 0px rgba(0,0,0,.1),
+					4px 4px 5px 0px rgba(0,0,0,.1);
+	}
+	
+	.btn-2 {
+		background: rgb(96,9,240);
+		background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+		border: none;
+	}
+	.btn-2:before {
+		height: 0%;
+		width: 2px;
+	}
+	.btn-2:hover {
+		box-shadow: inset -4px -4px 6px 0 rgba(255,255,255,.2),
+					inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+	}
+	
+	
+	/* 图片 */
+	#atlas {
+		position: relative;
+		width: 100%;
+		height: 1300px;
+		overflow:hidden;
+		top: 30px;
+		
+	}
+	.jia {
+		border-radius: 10px;
+		background: #f1f1f1;
+	}
+	
+	.atlas-location {
+		position: relative;
+		float: left;
+		margin-bottom: 15px;
+		color: #FFFFFF;
+		cursor: pointer;
+	}
+	
+	.atlas-tub1 {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+	}
+	
+	.atlas-tub2 {
+		position: absolute;
+		bottom: 10px;
+		right: 100px;
+		z-index: 99;
+	}
+	
+	.atlas-tub3 {
+		position: absolute;
+		bottom: 10px;
+		right: 30px;
+		z-index: 99;
+	}
+	
+	.atlas-tub4 {
+		position: absolute;
+		bottom: 0px;
+		width: 100%;
+		height: 50px;
+		background: linear-gradient(180deg,rgba(121, 121, 121, 0.0),#353535);
+	}
+	
+	.ou{
+		display: none;
+	}
+	
+	.tubdx {
+		width: 2rem;
+		border-radius: 15%;
+	}
+	
+	.tubdx1 {
+		width: 1rem;
+		border-radius: 15px;
+	}
+	
+	.k {
+		width: 293.7px;
+		float: left;
+		margin-left: 15px;
+	}
+	
+	/* 图集：黑色影幕 */
+	.ying{
+		position: absolute;
+		bottom: 0;
+		width: 1250px;
+		height: 450px;
+		background: linear-gradient(180deg,rgba(53,53,53,0),#353535);
+	}
+	
+	/* 图片结束 */
+	
+	/* 图片加载完成 */
+	.tpdibu{
+		width: 1250px;
+		height: 50px;
+		margin-top: 50px;
+		
+	}
+	.tpdibu li{
+		width: 300px;
+		height: 50px;
+		margin: 0 auto;
+		line-height: 50px;
+		text-align: center;
+		color: #838383;
+		
+	}
+	/* 图片加载完成结束 */
+	
+	
